@@ -13,6 +13,7 @@ int main() {
 	// Label inicio
 	inicio:
 	
+	// Limpa o console
 	system("cls");	
 	
 	cout << "Digite o valor para a nota 1: ";
