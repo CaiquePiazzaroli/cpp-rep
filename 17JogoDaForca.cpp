@@ -3,15 +3,13 @@
 using namespace std;
 
 
-int main()
-{
-
+int main(){
     // Criação de variáveis
     char palavraSecreta[30] = "casa", letraEscolhida;
     bool acertou = false, venceu = false;
     int vidas = 6, tamanhoPalavra = 0;
 
-    // Preenchendo o vetor char com - 
+    // Descobrindo o tamanho real da palavra
     for (int i = 0; i < sizeof(palavraSecreta); i++){
         if (palavraSecreta[i] == '\0'){
             break;
@@ -19,6 +17,7 @@ int main()
         tamanhoPalavra++;
     }
 
+    // Criando o array que receberá os inputs do usuário caso seja real
     char palavraDescoberta[tamanhoPalavra];
 
     for(int i = 0; i < tamanhoPalavra; i++) {
